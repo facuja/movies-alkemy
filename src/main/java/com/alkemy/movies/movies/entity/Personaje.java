@@ -29,6 +29,6 @@ public class Personaje {
     private String historia;
 
 
-    @ManyToMany(mappedBy = "personajes", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "personajes")
     private List<Pelicula> peliculas = new ArrayList<>();
 }

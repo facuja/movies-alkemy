@@ -27,24 +27,24 @@ public class Pelicula {
     @DateTimeFormat(pattern = "yyyy/MM/dd")
     private LocalDate fechaCreacion;
 
-    private Long calificacion;
+    private int calificacion;
 
     @Column(name = "id_genero", nullable = false)
     private Long idGenero;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_genero", insertable = false, updatable = false)
     private Genero genero;
 
 
     @ManyToMany(
-                cascade = {
-                        CascadeType.PERSIST,
-                        CascadeType.MERGE
-                })
+            cascade = {
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE
+            })
     @JoinTable(
-            name = "personaje_pelicula",
-            joinColumns = @JoinColumn(name = "id_pais"),
+            name = "pelicula_personaje",
+            joinColumns = @JoinColumn(name = "id_pelicula"),
             inverseJoinColumns = @JoinColumn(name = "id_personaje")
     )
     private Set<Personaje> personajes = new HashSet<>();
