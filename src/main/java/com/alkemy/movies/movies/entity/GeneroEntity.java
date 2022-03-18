@@ -1,6 +1,8 @@
 package com.alkemy.movies.movies.entity;
 
 
+
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,7 +12,7 @@ import javax.persistence.*;
 @Table(name = "genero")
 @Getter
 @Setter
-public class Genero {
+public class GeneroEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)

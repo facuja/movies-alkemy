@@ -11,7 +11,7 @@ import java.util.List;
 @Table(name = "personaje")
 @Getter
 @Setter
-public class Personaje {
+public class PersonajeEntity {
 
 
     @Id
@@ -30,5 +30,5 @@ public class Personaje {
 
 
     @ManyToMany(mappedBy = "personajes")
-    private List<Pelicula> peliculas = new ArrayList<>();
+    private List<PeliculaEntity> peliculas = new ArrayList<>();
 }
