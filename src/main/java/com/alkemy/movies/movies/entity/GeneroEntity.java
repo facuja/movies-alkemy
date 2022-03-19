@@ -1,8 +1,6 @@
 package com.alkemy.movies.movies.entity;
 
 
-
-
 import lombok.Getter;
 import lombok.Setter;
 
