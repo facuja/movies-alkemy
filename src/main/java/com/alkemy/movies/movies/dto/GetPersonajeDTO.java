@@ -6,9 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class GeneroDTO {
-
-    private Long id;
+public class GetPersonajeDTO {
     private String nombre;
     private String imagen;
 }
