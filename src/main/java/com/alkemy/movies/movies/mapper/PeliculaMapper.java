@@ -32,6 +32,14 @@ public class PeliculaMapper {
         return peliculaDTO;
     }
 
+    public List<PeliculaDTO> PeliculasEntityList2DTOList(List<PeliculaEntity> entities) {
+        List<PeliculaDTO> dtos = new ArrayList<>();
+        for (PeliculaEntity entity : entities) {
+            dtos.add(PeliculaEntity2DTO(entity));
+        }
+        return dtos;
+    }
+
 
     public GetPeliculaDTO GetPeliculaEntity2DTO(PeliculaEntity entity) {
         GetPeliculaDTO getPeliculaDTO = new GetPeliculaDTO();
