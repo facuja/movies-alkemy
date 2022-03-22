@@ -3,7 +3,6 @@ package com.alkemy.movies.movies.service.impl;
 
 import com.alkemy.movies.movies.dto.GetPersonajeDTO;
 import com.alkemy.movies.movies.dto.PersonajeDTO;
-import com.alkemy.movies.movies.entity.GeneroEntity;
 import com.alkemy.movies.movies.entity.PersonajeEntity;
 import com.alkemy.movies.movies.mapper.PersonajeMapper;
 import com.alkemy.movies.movies.repository.PersonajeRepository;
